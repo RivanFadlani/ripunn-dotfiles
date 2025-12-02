@@ -1,0 +1,46 @@
+format = """
+$username\
+$directory\
+[~ ](bold cyan)\
+$git_branch\
+$git_status\
+$cmd_duration\
+$line_break\
+[](red) [](yellow) $character"""
+
+[username]
+show_always = true
+style_user = "bold green"
+format = "[$user]($style) "
+
+[directory]
+home_symbol = "…"
+truncation_length = 1
+style = "bold yellow"
+format = "on [$path]($style) "
+
+[git_branch]
+symbol = " "
+style = "purple"
+truncation_length = 10
+truncation_symbol = ''
+format = "on [$symbol$branch]($style) "
+
+[git_status]
+ahead = '${count}'
+diverged = '${ahead_count}{behind_count}'
+behind = '${count}'
+conflicted = ''
+untracked = '?'
+stashed = '󰏓'
+modified = '!M'
+staged = '[+S](green)'
+format = '([$all_status$stashed$ahead_behind](bold red)) '
+
+[cmd_duration]
+min_time = 500
+format = 'took [$duration](bold yellow)'
+
+[character]
+success_symbol = '[»](bold cyan)'
+error_symbol = '[»](bold red)'
