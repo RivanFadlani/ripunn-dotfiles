@@ -6,7 +6,9 @@ $git_branch\
 $git_status\
 $cmd_duration\
 $line_break\
-[](red) [](yellow) $character"""
+[](red) [](yellow) $character$line_break"""
+
+add_newline = false
 
 [username]
 show_always = true
