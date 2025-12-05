@@ -1,7 +1,7 @@
 format = """
 $username\
 $directory\
-[~ ](bold cyan)\
+[~ ](bold blue)\
 $git_branch\
 $git_status\
 $cmd_duration\
@@ -23,7 +23,7 @@ format = "on [$path]($style) "
 
 [git_branch]
 symbol = " "
-style = "purple"
+style = "cyan"
 truncation_length = 10
 truncation_symbol = ''
 format = "on [$symbol$branch]($style) "
@@ -41,7 +41,7 @@ format = '([$all_status$stashed$ahead_behind](bold red)) '
 
 [cmd_duration]
 min_time = 500
-format = 'took [$duration](bold yellow)'
+format = 'took [$duration](bold blue)'
 
 [character]
 success_symbol = '[»](bold cyan)'
