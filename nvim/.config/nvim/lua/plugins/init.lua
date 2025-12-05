@@ -13,6 +13,24 @@ return {
     end,
   },
 
+  -- indent blakline
+  -- {
+  --   "lukas-reineke/indent-blankline.nvim",
+  --   main = "ibl",
+  --   ---@module "ibl"
+  --   ---@type ibl.config
+  --   opts = {},
+  -- },
+
+  -- mywpm
+  {
+    "slowy07/mywpm.nvim",
+    event = "VeryLazy",
+    config = function()
+      require "configs.mywpm"
+    end,
+  },
+
   -- discord rpc - neocord
   {
     "IogaMaster/neocord",
