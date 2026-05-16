@@ -11,24 +11,38 @@ local M = {}
 
 M.base46 = {
   theme = "everblush",
-  -- hl_override = {
-  -- 	Comment = { italic = true },
-  -- 	["@comment"] = { italic = true },
-  -- },
+  hl_override = {
+    Comment = { italic = true },
+    ["@comment"] = { italic = true },
+  },
 }
 
-M.nvdash = { load_on_startup = true }
+M.nvdash = {
+  load_on_startup = true,
+  header = {
+    "           ▄ ▄                   ",
+    "       ▄   ▄▄▄     ▄ ▄▄▄ ▄ ▄     ",
+    "       █ ▄ █▄█ ▄▄▄ █ █▄█ █ █     ",
+    "    ▄▄ █▄█▄▄▄█ █▄█▄█▄▄█▄▄█ █     ",
+    "  ▄ █▄▄█ ▄ ▄▄ ▄█ ▄▄▄▄▄▄▄▄▄▄▄▄▄▄  ",
+    "  █▄▄▄▄ ▄▄▄ █ ▄ ▄▄▄ ▄ ▄▄▄ ▄ ▄ █ ▄",
+    "▄ █ █▄█ █▄█ █ █ █▄█ █ █▄█ ▄▄▄ █ █",
+    "█▄█ ▄ █▄▄█▄▄█ █ ▄▄█ █ ▄ █ █▄█▄█ █",
+    "    █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█ █▄█▄▄▄█    ",
+    "",
+    "",
+  },
+}
 M.ui = {
+  tabufline = {
+    enabled = true,
+  },
   statusline = {
     theme = "minimal",
     separator_style = "round",
   },
-  tabufline = {
-    enabled = false,
-    show_numbers = true,
-  },
   cmp = {
-    style = "flat_dark",
+    style = "atom",
   },
 }
 
