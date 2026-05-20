@@ -16,7 +16,9 @@ o.background = "dark"
 vim.opt.relativenumber = true
 vim.opt.list = true
 vim.opt.listchars = {
-  eol = '↴',
+  eol = '¬',
+  tab = '• ',
+  trail = "·",
 }
 
 local highlights = {

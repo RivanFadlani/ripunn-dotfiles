@@ -3,17 +3,18 @@
 #    ╚═╝╩ ╩╚═╝╚═╝ ╩  ╩  ╩   ╚═╝╚═╝╝╚╝╚  ╩╚═╝
 
 font-family = JetBrainsMono Nerd Font
-theme = Everblush
+theme = everblush
 
 # window-padding-balance = true
 # window-width = 100
 # quick-terminal-size = 100%
 window-padding-x = 20
 window-padding-y = 20
-window-decoration = true
+window-decoration = false
 window-theme = ghostty
 
 font-size = 13
+cursor-style = block
 
 # adjust-cell-height = 20%
 
