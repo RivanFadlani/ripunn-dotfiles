@@ -1,0 +1,10 @@
+config.kdl.backup*
+
+*.bak
+*.backup
+*~
+*.swp
+.DS_Store
+
+*.log
+

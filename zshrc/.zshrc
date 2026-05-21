@@ -11,6 +11,9 @@ export ZSH="$HOME/.oh-my-zsh"
 export PATH="$HOME/.local/bin:$PATH"
 
 export EDITOR=nvim
+export BAT_THEME="Dracula"
+export PATH=$PATH:/home/ripunn/.spicetify
+
 ZSH_THEME="robbyrussell"
 plugins=(git)
 
@@ -34,6 +37,7 @@ alias p="pwd"
 alias ls="eza --icons=always --color=always -a"
 alias ll="eza --icons=always --color=always -la"
 alias bl="btrfs-assistant-launcher"
+alias cat="bat"
 alias download="aria2c"
 alias systui="systemctl-tui"
 alias v="nvim"
@@ -59,6 +63,7 @@ alias pkg="rpm -qa | grep"
 # - yazi (tui file manager)
 # - lazygit (tui git)
 # - btop (hardware monitoring)
+# - nvtop (GPU & Accelerator process monitoring)
 
 #    ┌─┐┬ ┬┌┬┐┌─┐  ┌─┐┌┬┐┌─┐┬─┐┌┬┐
 #    ├─┤│ │ │ │ │  └─┐ │ ├─┤├┬┘ │ 
