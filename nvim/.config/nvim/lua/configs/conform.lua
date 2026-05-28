@@ -7,6 +7,7 @@ local options = {
     typescript = { "prettier" },
     python = { "black" },
     cpp = { "clang_format" },
+    json = { "prettier" },
   },
 
   format_on_save = {

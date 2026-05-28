@@ -71,12 +71,13 @@ return {
     end,
   },
 
-  -- discord rpc - neocord
+  -- discord rpc - cord.nvim
   {
-    "IogaMaster/neocord",
+    "vyfor/cord.nvim",
     event = "VeryLazy",
-    config = function()
-      require "configs.discord"
+    build = ":Cord update",
+    opts = function()
+      return require "configs.discord"
     end,
   },
 
