@@ -40,6 +40,22 @@ return {
   },
 
   {
+    "RRethy/vim-illuminate",
+    event = { "BufReadPost", "BufNewFile" },
+    config = function()
+      require("illuminate").configure({
+        providers = { "lsp", "treesitter", "regex" },
+        delay = 100, -- delay highlight dalam milidetik
+      })
+
+      -- Mengatur warna highlight (contoh: memberi garis bawah / underline)
+      vim.api.nvim_set_hl(0, "IlluminatedWordText", { underline = true })
+      vim.api.nvim_set_hl(0, "IlluminatedWordRead", { underline = true })
+      vim.api.nvim_set_hl(0, "IlluminatedWordWrite", { underline = true })
+    end,
+  },
+
+  {
     "stevearc/conform.nvim",
     event = "BufWritePre", -- uncomment for format on save
     opts = require "configs.conform",
@@ -50,6 +66,16 @@ return {
     "neovim/nvim-lspconfig",
     config = function()
       require "configs.lspconfig"
+    end,
+  },
+
+  {
+    "mattn/emmet-vim",
+    lazy = false, 
+    init = function()
+      vim.g.user_emmet_install_global = 1
+    
+      vim.g.user_emmet_leader_key = '<C-e>'
     end,
   },
 

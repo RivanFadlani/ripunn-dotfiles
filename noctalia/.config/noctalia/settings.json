@@ -81,6 +81,13 @@
         "widgets": {
             "center": [
                 {
+                    "defaultSettings": {
+                        "hideBackground": false,
+                        "minimumThreshold": 10
+                    },
+                    "id": "plugin:catwalk"
+                },
+                {
                     "clockColor": "none",
                     "customFont": "",
                     "formatHorizontal": "HH:mm ddd, MMM dd",
@@ -91,13 +98,6 @@
                 }
             ],
             "left": [
-                {
-                    "defaultSettings": {
-                        "hideBackground": false,
-                        "minimumThreshold": 10
-                    },
-                    "id": "plugin:catwalk"
-                },
                 {
                     "characterCount": 2,
                     "colorizeIcons": false,
@@ -612,7 +612,8 @@
         "enabledTypes": [
             0,
             1,
-            2
+            2,
+            3
         ],
         "location": "top_right",
         "monitors": [
@@ -763,12 +764,12 @@
         ],
         "useOriginalImages": false,
         "useSolidColor": false,
-        "useWallhaven": true,
-        "viewMode": "recursive",
+        "useWallhaven": false,
+        "viewMode": "single",
         "wallhavenApiKey": "73eAoHLSQVL3NSH8FPActWDFkSgVvL3b",
         "wallhavenCategories": "010",
         "wallhavenOrder": "desc",
-        "wallhavenPurity": "100",
+        "wallhavenPurity": "000",
         "wallhavenQuery": "",
         "wallhavenRatios": "",
         "wallhavenResolutionHeight": "",

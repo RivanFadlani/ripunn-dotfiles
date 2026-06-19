@@ -14,7 +14,7 @@ window-decoration = false
 window-theme = ghostty
 
 font-size = 13
-cursor-style = block
+cursor-style = bar
 
 # adjust-cell-height = 20%
 

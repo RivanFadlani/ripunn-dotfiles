@@ -43,6 +43,7 @@ alias systui="systemctl-tui"
 alias v="nvim"
 
 # === System
+alias q="exit"
 alias mem="du -sh"
 alias disk="df -h"
 alias part="lsblk -f"
@@ -53,6 +54,9 @@ alias h="history"
 alias cls="clear"
 alias c="clear"
 alias pkg="rpm -qa | grep"
+
+# === Git
+alias glog="git log --oneline --graph"
 
 #    ┌─┐┌─┐┌┬┐┌┬┐┌─┐┌┐┌┌┬┐  ┬  ┬┌─┐┌┬┐┌─┐
 #    │  │ │││││││├─┤│││ ││  │  │└─┐ │ └─┐
@@ -86,3 +90,6 @@ function y() {
 	fi
 	rm -f -- "$tmp"
 }
+
+# opencode
+export PATH=/home/ripunn/.opencode/bin:$PATH
