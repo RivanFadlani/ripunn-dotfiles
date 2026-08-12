@@ -18,6 +18,8 @@ ZSH_THEME="robbyrussell"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
+# Set up fzf key bindings and fuzzy completion
+source <(fzf --zsh)
 
 #    ┌─┐┬  ┬┌─┐┌─┐
 #    ├─┤│  │├─┤└─┐
@@ -41,6 +43,8 @@ alias cat="bat"
 alias download="aria2c"
 alias systui="systemctl-tui"
 alias v="nvim"
+alias sn="sudo nmap -sn"
+alias glow="glow -w 120"
 
 # === System
 alias q="exit"
@@ -54,6 +58,7 @@ alias h="history"
 alias cls="clear"
 alias c="clear"
 alias pkg="rpm -qa | grep"
+alias chip="ip a"
 
 # === Git
 alias glog="git log --oneline --graph"
@@ -76,6 +81,7 @@ alias glog="git log --oneline --graph"
 fastfetch
 export STARSHIP_CONFIG="$HOME/.config/starship/starship.toml"
 eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
 
 #    ┬ ┬┌─┐┌─┐┬  ┌─┐┌─┐┌┐┌┌─┐┬┌─┐
 #    └┬┘├─┤┌─┘│  │  │ ││││├┤ ││ ┬
@@ -93,3 +99,7 @@ function y() {
 
 # opencode
 export PATH=/home/ripunn/.opencode/bin:$PATH
+
+
+# Added by Antigravity CLI installer
+export PATH="/home/ripunn/.local/bin:$PATH"
