@@ -63,7 +63,7 @@
     "break", // Memberikan jarak 1 baris kosong agar rapi
     {
       "type": "custom",
-      "format": "          \u001b[1;33m\ueefe  \u001b[1;35m\ueefe  \u001b[1;32m\ueefe  \u001b[1;36m\ueefe  \u001b[1;34m\ueefe"
+      "format": "          \u001b[1;33m\ueefe  \u001b[1;35m\ueefe  \u001b[1;32m\ueefe  \u001b[1;36m\ueefe  \u001b[1;34m\ueefe  \u001b[0m"
     }
   ]
 }
