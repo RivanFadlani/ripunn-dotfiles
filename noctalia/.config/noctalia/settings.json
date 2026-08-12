@@ -54,7 +54,7 @@
         "frameRadius": 12,
         "frameThickness": 8,
         "hideOnOverview": false,
-        "marginHorizontal": 100,
+        "marginHorizontal": 150,
         "marginVertical": 5,
         "middleClickAction": "none",
         "middleClickCommand": "",
@@ -194,26 +194,6 @@
                         "mode": "region"
                     },
                     "id": "plugin:screenshot"
-                },
-                {
-                    "defaultSettings": {
-                        "autoPaste": false,
-                        "autoPasteDelay": 300,
-                        "autoPasteOnRightClick": false,
-                        "cardColors": {
-                        },
-                        "customColors": {
-                        },
-                        "enableTodoIntegration": false,
-                        "fullscreenMode": false,
-                        "hidePanelBackground": false,
-                        "notecardsEnabled": true,
-                        "panelHeight": 0,
-                        "panelWidth": 1450,
-                        "pincardsEnabled": true,
-                        "showCloseButton": true
-                    },
-                    "id": "plugin:clipper"
                 },
                 {
                     "defaultSettings": {
@@ -414,12 +394,12 @@
         "animationSpeed": 1,
         "backgroundOpacity": 1,
         "colorizeIcons": false,
-        "deadOpacity": 0.6,
+        "deadOpacity": 1,
         "displayMode": "exclusive",
-        "dockType": "floating",
-        "enabled": false,
-        "floatingRatio": 0.5,
-        "groupApps": false,
+        "dockType": "attached",
+        "enabled": true,
+        "floatingRatio": 0,
+        "groupApps": true,
         "groupClickAction": "cycle",
         "groupContextMenuMode": "extended",
         "groupIndicatorStyle": "dots",
@@ -429,17 +409,21 @@
         "indicatorThickness": 6,
         "launcherIcon": "",
         "launcherIconColor": "none",
-        "launcherPosition": "end",
+        "launcherPosition": "start",
         "launcherUseDistroLogo": false,
         "monitors": [
         ],
-        "onlySameOutput": true,
+        "onlySameOutput": false,
         "pinnedApps": [
+            "com.mitchellh.ghostty",
+            "md.obsidian.Obsidian",
+            "app.zen_browser.zen",
+            "kitty"
         ],
-        "pinnedStatic": false,
+        "pinnedStatic": true,
         "position": "bottom",
         "showDockIndicator": true,
-        "showLauncherIcon": false,
+        "showLauncherIcon": true,
         "sitOnFrame": false,
         "size": 1.2
     },
@@ -764,8 +748,8 @@
         ],
         "useOriginalImages": false,
         "useSolidColor": false,
-        "useWallhaven": true,
-        "viewMode": "browse",
+        "useWallhaven": false,
+        "viewMode": "single",
         "wallhavenApiKey": "",
         "wallhavenCategories": "010",
         "wallhavenOrder": "desc",
