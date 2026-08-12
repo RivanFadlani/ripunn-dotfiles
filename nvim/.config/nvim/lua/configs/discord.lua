@@ -7,7 +7,7 @@ local options = {
     timeout = 180000,
     show_status = true,
     ignore_focus = true,
-    details = "Idling",
+    details = "Take a Breath / Reading The Docs",
     state = "Away from keyboard",
     icon = "https://raw.githubusercontent.com/vyfor/icons/master/icons/default/accent/idle.png",
   },

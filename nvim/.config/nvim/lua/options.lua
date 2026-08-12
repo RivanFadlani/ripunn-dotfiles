@@ -156,7 +156,10 @@ _G.lsp = function()
   if rawget(vim, "lsp") then
     for _, client in ipairs(vim.lsp.get_clients()) do
       if client.attached_buffers[M.stbufnr()] then
-        return (vim.o.columns > 100 and "   LSP ~ " .. client.name .. " ") or "   LSP "
+        -- change lsp name
+        local ft_map = { typescriptreact = "tsx", javascriptreact = "jsx", typescript = "ts", javascript = "js" }
+        local name = ft_map[vim.bo.filetype] or client.name
+        return (vim.o.columns > 100 and "   LSP ~ " .. name .. " ") or "   LSP "
       end
     end
   end

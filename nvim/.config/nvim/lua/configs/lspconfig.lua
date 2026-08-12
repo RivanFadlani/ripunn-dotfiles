@@ -1,6 +1,6 @@
 require("nvchad.configs.lspconfig").defaults()
 
-local servers = { "html", "cssls", "pylsp", "clangd", "ts_ls", "emmet_ls" }
+local servers = { "html", "cssls", "pylsp", "clangd", "ts_ls", "emmet_ls", "tailwindcss" }
 vim.lsp.enable(servers)
 
 vim.diagnostic.config({
